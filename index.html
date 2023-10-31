@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="dist/output.css" rel="stylesheet">
+  
+  <script defer src="app/main.js"></script>
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+<body class="body blue flex justify-center items-center min-h-screen m-0">
+  <div class="calculator w-[600px]  flex flex-col justify-center items-center gap-8 p-10">
+    <div class="calculator__theme w-full flex justify-between items-end">
+      <h3 class="text-[2.9rem] font-bold leading-[1]">calc</h3>
+      <div class="theme__option flex justify-center items-end gap-5 relative">
+        <h3 class="text-[1.5rem] mr-4 font-bold">THEME</h3>
+        <div class="option--dots flex w-[70px] flex-col justify-center items-center">
+          <div class="dots__nums w-full flex justify-around items-center text-[1.3rem] font-bold">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+          <div class="dots__switcher" id="switcher"></div>
+        </div>
+      </div>
+    </div>
+    <div class="calculator__output text-[4.5rem] font-bold text-end tracking-wide">
+      <div class="output__previous text-[2rem] text-[#9b9b9b]" id="previos-output"></div>
+      <div class="output__current" id="current-output">0</div>
+    </div>
+    <div class="calculator__input">
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button class="delete" data-delete>DEL</button>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button class="operator" data-operator="+">+</button>
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button class="operator" data-operator="-">-</button>
+      <button class="decimal" data-number=".">.</button>
+      <button data-number>0</button>
+      <button class="operator" data-operator="/">/</button>
+      <button class="operator" data-operator="*">&times;</button>
+      <button class="reset" id="reset-btn" data-reset>RESET</button>
+      <button class="equal-sign operator" data-equals="=">=</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="copyright">
+      Challenge by <a href="https://www.frontendmentor.io/home" target="_blank">Frontend Mentor </a>
+      | Coded by <a class="is-hoverable" href="https://github.com/MR-b7r" target="_blank">Haitham Bahr</a>.
+    </div>
+  </footer>
+</body>
+</html>
